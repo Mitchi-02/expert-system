@@ -40,26 +40,6 @@ def forwardChaining(facts, rules, factToProve):
 
     return proof, fact_found
 
-def forwardChaining(facts, rules, factToProve):
-    fact_found: bool = factToProve in facts
-    proof: List[Dict[str, Any]] = []
-    while not fact_found:
-      index: int = getFirstVerifiedRuleIndex(facts, rules)
-      if index is None:
-        break
-      else:
-        rule: Dict[str, Any] = rules[index]
-        facts.extend(rule["actions"])
-        proof.append({
-          "rule" : rule,
-          "facts": facts.copy()
-        })
-        rules.remove(rule)
-        if(factToProve in rule["actions"]):
-          fact_found = True
-
-    return proof, fact_found
-
 def backwardChaining(facts, rules: List[Dict[str, Any]], factToProve):
     if(factToProve in facts):
        return [], True
