@@ -85,22 +85,22 @@
     <h1>Input page</h1>
     <form action="/process" method="post" enctype="multipart/form-data">
         <label for="rules_file">Select rules file:</label>
-        <input type="file" id="rules_file" name="rules_file">
+        <input required type="file" id="rules_file" name="rules_file">
 
         <label for="facts_file">Select facts file:</label>
-        <input type="file" id="facts_file" name="facts_file">
+        <input required type="file" id="facts_file" name="facts_file">
 
         <label for="fact">Fact to demonstrate:</label>
-        <input type="text" id="fact" name="fact">
+        <input required type="text" id="fact" name="fact">
 
         <label for="chaining_type" style="display: block; margin-bottom: 20px;">Chaining type:</label>
         <div class="grid-col">
             <div class="flex">
-                <input type="radio" id="forward_chaining" name="chaining_type" value="forward">
+                <input required type="radio" id="forward_chaining" name="chaining_type" value="forward">
                 <label for="forward_chaining">Forward Chaining</label>
             </div>
             <div class="flex">
-                <input type="radio" id="backward_chaining" name="chaining_type" value="backward">
+                <input required type="radio" id="backward_chaining" name="chaining_type" value="backward">
                 <label for="backward_chaining">Backward Chaining</label>
             </div>
         </div>
