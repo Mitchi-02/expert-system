@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            display: grid;
+            place-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            min-width: 600px;
+            display: grid;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        input:not([type="radio"], [type="submit"]) {
+            display: block;
+            margin-bottom: 30px;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .grid-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+        .flex {
+            display: flex;
+            gap: 10px;
+        }
+        .flex > label {
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Input page</h1>
+    <form action="/process" method="post" enctype="multipart/form-data">
+        <label for="rules_file">Select rules file:</label>
+        <input type="file" id="rules_file" name="rules_file">
+
+        <label for="facts_file">Select facts file:</label>
+        <input type="file" id="facts_file" name="facts_file">
+
+        <label for="fact">Fact to demonstrate:</label>
+        <input type="text" id="fact" name="fact">
+
+        <label for="chaining_type" style="display: block; margin-bottom: 20px;">Chaining type:</label>
+        <div class="grid-col">
+            <div class="flex">
+                <input type="radio" id="forward_chaining" name="chaining_type" value="forward">
+                <label for="forward_chaining">Forward Chaining</label>
+            </div>
+            <div class="flex">
+                <input type="radio" id="backward_chaining" name="chaining_type" value="backward">
+                <label for="backward_chaining">Backward Chaining</label>
+            </div>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

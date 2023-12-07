@@ -1,0 +1,3 @@
+Rule(1): IF (a,b), THEN (d)
+Rule(2): IF (d), THEN (k)
+Rule(2): IF (c,d), THEN (e,f)
