@@ -20,3 +20,8 @@ Ensure that you have the following installed on your machine:
    ```bash
    git clone https://github.com/your-username/your-flask-project.git
 
+3. Navigate to the project directory:
+   ```bash
+   cd expertsystem
+4. Set Up Virtual Environment:
+   
