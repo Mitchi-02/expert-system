@@ -18,7 +18,7 @@ Ensure that you have the following installed on your machine:
 2. Clone the repository using the following command:
 
    ```bash
-   git clone https://github.com/your-username/your-flask-project.git
+   git clone [https://github.com/your-username/your-flask-project.git](https://github.com/XmiTchiX/expertsystem.git)
 
 3. Navigate to the project directory:
    ```bash
