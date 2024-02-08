@@ -20,11 +20,11 @@ Ensure that you have the following installed on your machine:
 2. Clone the repository using the following command:
 
    ```bash
-   git clone https://github.com/XmiTchiX/expertsystem.git
+   git clone https://github.com/Mitchi-02/expert-system.git
 
 3. Navigate to the project directory:
    ```bash
-   cd expertsystem
+   cd expert-system
 4. Set Up Virtual Environment:
    ```bash
    python -m venv venv
