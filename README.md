@@ -1,8 +1,6 @@
 # Demo Expert System
 A simple Flask App implementing an expert system that uses forward / backward chaining. The full report can be found [here](https://drive.google.com/file/d/1YXcUCBA3eEH9ZHJV_mYVvqL49ElzRwq-/view?usp=sharing]).
 
-This is an academic mini project.
-
 ## Getting Started
 
 ### Prerequisites
