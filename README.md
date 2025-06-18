@@ -11,7 +11,7 @@ Ensure that you have the following installed on your machine:
 - [pip](https://pip.pypa.io/en/stable/installation/) (Python package installer)
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-### Clone the Repository
+### Installation
 
 1. Open a terminal window.
 
